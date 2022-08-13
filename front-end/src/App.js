@@ -14,7 +14,7 @@ const App = () => {
   };
   const sendRequestHandler = async () => {
     try {
-      const url = `http://localhost:4000/posts/${value}`
+      const url = `https://scalio-test-ten.vercel.app/posts/${value}`
       const response = await fetch(url);
       const data = await response.json()
       setPost(data)
